@@ -1,0 +1,51 @@
+<?php 
+
+
+$query="SELECT * FROM `travelform`";
+$search_result=filterTable($query);
+
+function filterTable($query){
+    $connect=mysqli_connect("localhost","root","","travelformdb");
+    $filter_result=mysqli_query($connect,$query);
+    return $filter_result;
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>NAME</td>
+            <td>AGE   </td>
+            <td> GENDER  </td>
+            <td> FROM  </td>
+            <td> TO  </td>
+            <td> EMAIL  </td>
+            <td> REASON TO TRAVEL </td>
+            
+        </tr>
+        <?php  while($row=mysqli_fetch_array($search_result)) :?>
+
+
+        <tr>
+            <td><?php  echo $row['name']; ?></td>
+            <td><?php  echo $row['age']; ?></td>
+            <td><?php  echo $row['gender']; ?></td>
+            <td><?php  echo $row['country_name']; ?></td>
+            <td><?php  echo $row['country_name']; ?></td>
+            <td><?php  echo $row['email']; ?></td>
+            <td><?php  echo $row['purpose']; ?></td>
+            
+            <td></td>
+        
+        </tr>
+        <?php endwhile;?>
+    </table>
+</body>
+</html>

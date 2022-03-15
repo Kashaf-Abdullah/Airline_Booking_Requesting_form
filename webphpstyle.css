@@ -1,0 +1,56 @@
+*{
+    margin: 0px;
+    padding:0px;
+    background-size:cover;
+}
+.pic{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    z-index: -1;
+
+}
+.btn a{
+    color:white;
+    text-decoration: none;
+}
+
+.nav   {
+    display: flex;
+    flex-direction: row;
+    color:aliceblue;
+    font-size: 25px;
+    padding:23px;
+    justify-content:end;
+    
+
+    
+}
+.logo img{
+    display: flex;
+    justify-content: flex-start;
+    margin: -22px 1050px 0px 0px;
+
+}
+.nav  li{
+    list-style: none;
+    padding:22px;
+}
+.container{
+    text-align: center;
+margin:11%;
+color: rgb(238, 238, 238);
+}
+.btn{
+    background-color: Transparent;
+
+color:white;
+padding:20px;}
+
+.btn img{
+    width:30px;
+}
+#travelheading{
+    font-size: 77px;
+
+}

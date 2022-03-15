@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="travelformstyle.css">
+</head>
+<body>
+    <img class="bg"src="travelbackground2.jpg">
+    <div class="maincontainer">
+    
+        <h1>WELCOME TO TRAVEL</h1>
+        <p>Enter your details and submit this form to confirm your participation in the trip </p>
+<form action="travelform.php" method="post">
+    <input type="text" name="name" id="name"placeholder="name">
+    <br>
+    <input type="text" name="age" id="age"placeholder="age">
+  <br>
+<label class="genderlabel">GENDER</label><input class="genderm"type="radio" name="gender" value="MALE">MALE<input class="genderf" type="radio" name="gender" value="FEMALE">FEMALE <input class="gendern" type="radio" name="gender" value="OTHER">OTHER
+  <br>
+  <select value="country_name">
+      <option value="none">FROM</option>
+      <option value="Lahore">Lahore</option>
+      <option value="Islamabasd">Islamabad</option>
+      <option value="Hyderbad">Hyderbad</option>
+      <option value="Skardu">Skardu</option>
+      <option value="Karachi">Karachi</option>
+      
+      <!-- </select>
+      <select value="country_nameto">
+        <option value="none">TO</option>
+        <option value="Lahore">Lahore</option>
+        <option value="Islamabasd">Islamabad</option>
+        <option value="Hyderbad">Hyderbad</option>
+        <option value="Skardu">Skardu</option>
+        <option value="Karachi">Karachi</option>
+        
+        </select> -->
+      <br>
+    <input type="email" name="email" id="email"placeholder="enter your email">
+    <br>
+    <textarea name="purpose" id="purpose" cols="30" rows="10" placeholder="TRAVEL PURPOSE"></textarea>
+<button class="btn">Submit</button>
+</form>
+    </div>
+</body>
+</html>
